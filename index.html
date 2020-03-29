@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical Javascript</title>
     <script src="./handlers/todoHandlers.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <button onclick="handlers.toggleAll()">Toggle All</button><br><br>
-    </div>
-    <div>
-        <button onclick="handlers.addTodo()">Add Todo</button>
-        <input type="text" id="textBox"><br><br>
-    </div>
-    <div>
-        <button onclick="handlers.changeTodo()">Change Todo</button>
-        <input type = "number" id="positionBox" placeholder="position">
-        <input type="text" id="newTodoBox" placeholder="text"><br><br>
-    </div>
-    <div>
-        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-        <input type="number"  id= "toggleCompleteBox" placeholder="position">
-    </div>
-    <div>
-        <ul id="list"></ul>
-    </div>
+    <section class="centered">
+        <h1>Todo practical List</h1>
+        <div>
+            <button onclick="handlers.toggleAll()">Toggle All</button><br><br>
+        </div>
+        <div>
+            <button onclick="handlers.addTodo()">Add Todo</button>
+            <input type="text" id="textBox"><br><br>
+        </div>
+        <div>
+            <button onclick="handlers.changeTodo()">Change Todo</button>
+            <input type = "number" id="positionBox" placeholder="position">
+            <input type="text" id="newTodoBox" placeholder="text"><br><br>
+        </div>
+        <div>
+            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+            <input type="number"  id= "toggleCompleteBox" placeholder="position">
+        </div>
+        <div>
+            <ul id="list"></ul>
+        </div>
+    </section>
     <script src="./data/data.js"></script>
     <script src="./view/todoView.js"></script>
 </body>
