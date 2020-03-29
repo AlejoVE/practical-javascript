@@ -8,19 +8,19 @@
 </head>
 <body>
     <div>
-        <button >Toggle All</button><br><br>
+        <button onclick="handlers.toggleAll()">Toggle All</button><br><br>
     </div>
     <div>
-        <button>Add Todo</button>
+        <button onclick="handlers.addTodo()">Add Todo</button>
         <input type="text" id="textBox"><br><br>
     </div>
     <div>
-        <button>Change Todo</button>
+        <button onclick="handlers.changeTodo()">Change Todo</button>
         <input type = "number" id="positionBox" placeholder="position">
         <input type="text" id="newTodoBox" placeholder="text"><br><br>
     </div>
     <div>
-        <button>Toggle Completed</button>
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
         <input type="number"  id= "toggleCompleteBox" placeholder="position">
     </div>
     <div>
